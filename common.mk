@@ -92,6 +92,11 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Baseband
+PRODUCT_PACKAGES += \
+    init.baseband.sh \
+    init.xiaomi.series.rc
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default
