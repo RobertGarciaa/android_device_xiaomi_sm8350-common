@@ -85,10 +85,6 @@ DEVICE_MANIFEST_FILE := \
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_lisa
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lisa
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -230,6 +226,3 @@ CONFIG_IEEE80211AX := true
 
 # Inherit proprietary blobs
 include vendor/xiaomi/sm8350-common/BoardConfigVendor.mk
-
-# Inherit MIUI Camera
--include vendor/lisa-miuicamera/products/board.mk
